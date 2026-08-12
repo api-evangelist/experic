@@ -1,17 +1,33 @@
 aid: experic
 name: Experic
-description: 'Experic is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: Experic is a specialist powder-handling contract development and manufacturing
+  organization (CDMO) founded in 2018, headquartered in Cranbury, New Jersey, with an
+  EU clinical supply center in Ireland. The company provides process, analytical and
+  formulation development, clinical and commercial cGMP manufacturing, dry powder
+  inhalation (DPI) and capsule/powder dosing, autoinjector and pen assembly, and clinical
+  trial packaging, labeling, storage and logistics. Experic is a physical-goods
+  manufacturing and clinical supply services business; it publishes no public developer
+  program, API documentation, or machine-readable API contract.
 url: https://raw.githubusercontent.com/api-evangelist/experic/refs/heads/main/apis.yml
+image: https://expericservices.com/wp-content/uploads/2025/02/cropped-favicon-X-270x270.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Pharmaceuticals
+- Life Sciences
+- Manufacturing
+- CDMO
+- Clinical Trials
+- Contract Manufacturing
+- Drug Delivery
+- Supply Chain
+- Packaging
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,54 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/experic-domain-security.yml
+- type: LLMsTxt
+  url: llms/experic-llms.txt
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://expericservices.com/
+- type: About
+  url: https://expericservices.com/the-experic-difference/
+- type: Support
+  url: https://expericservices.com/contact/
+- type: Blog
+  url: https://expericservices.com/news-events/
+- type: BlogRSS
+  url: https://expericservices.com/feed/
+- type: PrivacyPolicy
+  url: https://expericservices.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/epic-csc-llc/
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Experic is a pharmaceutical CDMO selling physical development, manufacturing
+    and clinical-supply services; its entire 142-URL sitemap is marketing, resource,
+    news and careers pages with no developer, docs, API or portal path, and every
+    contract-discovery probe (openapi.json, swagger.json, api-docs, graphql, llms.txt,
+    all eight /.well-known/ paths) returned 404 from the origin, with the only
+    machine-readable endpoint being the marketing site's own WordPress /wp-json/ CMS
+    surface.
+  evidence:
+  - url: https://expericservices.com/openapi.json
+    status: 404
+  - url: https://expericservices.com/graphql
+    status: 404
+  - url: https://expericservices.com/llms.txt
+    status: 404
+  - url: https://expericservices.com/.well-known/agent-card.json
+    status: 404
+  - url: https://expericservices.com/.well-known/security.txt
+    status: 404
+  - url: https://api.expericservices.com/
+    status: 0
+  - url: https://developer.expericservices.com/
+    status: 0
+  - url: https://expericservices.com/page-sitemap.xml
+    status: 200
+  checked: '2026-08-12'

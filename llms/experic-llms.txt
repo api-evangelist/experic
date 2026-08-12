@@ -1,0 +1,47 @@
+# Experic
+
+> Experic is a specialist powder-handling contract development and manufacturing organization (CDMO) founded in 2018, headquartered in Cranbury, New Jersey, with an EU clinical supply center in Ireland. It provides pharmaceutical process, analytical and formulation development, clinical and commercial cGMP manufacturing, dry powder inhalation (DPI) and capsule/powder dosing, autoinjector and pen assembly, and clinical trial packaging, labeling, storage and logistics.
+
+<!--
+generated: 2026-08-12
+method: generated
+source: apis.yml + https://expericservices.com/ (probed 2026-08-12); Experic does not publish an llms.txt
+-->
+
+## API surface
+
+Experic publishes **no public API**. As of 2026-08-12 there is no developer portal, no API
+documentation, no API reference, no SDK, no machine-readable contract (OpenAPI, AsyncAPI,
+GraphQL SDL, MCP tool list, A2A agent card), and no `/.well-known/` document on any Experic
+host. Experic sells physical pharmaceutical development, manufacturing and clinical-supply
+services, not software. Do not attempt to call an Experic API; none exists.
+
+The only machine-readable endpoint reachable on expericservices.com is the default WordPress
+REST API (`/wp-json/`) belonging to the corporate marketing site's CMS, including a
+theme-local `experic/v1` namespace with a single `hero-slots` route that populates the
+homepage carousel. It is website plumbing, not a product API, and is not documented,
+supported, or offered by Experic as an integration surface.
+
+## Company
+
+- [Website](https://expericservices.com/): Corporate site
+- [The Experic Difference](https://expericservices.com/the-experic-difference/): Approach, people, experience, headquarters, partners
+- [Contact](https://expericservices.com/contact/): Inquiry form and facility contact details
+- [News & Events](https://expericservices.com/news-events/): Company news
+- [Resources](https://expericservices.com/resources/): Technical articles and white papers
+- [Careers](https://expericservices.com/careers/): Open roles
+- [Privacy Policy](https://expericservices.com/privacy-policy/)
+- [LinkedIn](https://www.linkedin.com/company/epic-csc-llc/): Company page (published under the prior legal entity name EPIC CSC LLC; linked from Experic's own site footer)
+
+## Capabilities
+
+- [Drug Product Development](https://expericservices.com/drug-product-development/): Process, analytical and formulation development
+- [Dry Powder Inhalation](https://expericservices.com/drug-product-development/dry-powder-inhalation/): DPI formulation and filling
+- [Drug Product Manufacturing](https://expericservices.com/drug-product-manufacturing/): Clinical and commercial cGMP manufacturing
+- [Clinical Packaging](https://expericservices.com/clinical-packaging/): Packaging, labeling, storage and logistics
+- [EU Clinical Supply Center](https://expericservices.com/the-experic-difference/eu-clinical-supply-center/): Ireland-based clinical trial storage and logistics
+- [Client Tailored Expansion](https://expericservices.com/client-tailored-expansion/): Dedicated suite build-out in 40,000 sq ft of cGMP greyspace
+
+## Profile
+
+- [API Evangelist profile](https://apis.io/provider/experic/): Independent third-party profile of Experic's public API surface
