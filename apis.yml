@@ -9,6 +9,17 @@ description: Experic is a specialist powder-handling contract development and ma
   manufacturing and clinical supply services business; it publishes no public developer
   program, API documentation, or machine-readable API contract.
 url: https://raw.githubusercontent.com/api-evangelist/experic/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://expericservices.com/wp-content/uploads/2025/02/cropped-favicon-X-270x270.png
 x-type: company
 x-source: harvest:secondary-market
